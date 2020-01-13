@@ -21,13 +21,14 @@ pip install -r requirements.txt
 
 ## Citation
 ```
-@article{dathathri2019plug,
-    title={Plug and Play Language Models: a Simple Approach to Controlled Text Generation},
-    author={Sumanth Dathathri and Andrea Madotto and Janice Lan and Jane Hung and Eric Frank and Piero Molino and Jason Yosinski and Rosanne Liu},
-    journal={arXiv preprint arXiv:1912.02164},
-    year={2019},
+@inproceedings{
+Dathathri2020Plug,
+title={Plug and Play Language Models: A Simple Approach to Controlled Text Generation},
+author={Sumanth Dathathri and Andrea Madotto and Janice Lan and Jane Hung and Eric Frank and Piero Molino and Jason Yosinski and Rosanne Liu},
+booktitle={International Conference on Learning Representations},
+year={2020},
+url={https://openreview.net/forum?id=H1edEyBKDS}
 }
-
 ```
 
 ## PPLM-BoW 
@@ -62,3 +63,5 @@ python run_pplm.py -D sentiment --class_label 2 --cond_text "My dog died" --leng
 
 2. Use `--class_label 3` for negative, and `--class_label 2` for positive
 
+
+The discriminator and the GPT-2 model in the root directory are different from those used for the analysis in the paper. Code and models corresponding to the paper can be found [here](https://github.com/uber-research/PPLM/tree/master/paper_code).
